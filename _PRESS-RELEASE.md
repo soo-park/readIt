@@ -1,5 +1,5 @@
-# Project Name #
-
+<!-- # Project Name #
+ -->
 <!-- 
 > This material was originally posted [here](http://www.quora.com/What-is-Amazons-approach-to-product-development-and-product-management). It is reproduced here for posterities sake.
 
@@ -15,7 +15,7 @@ Oh, and I also like to write press-releases in what I call "Oprah-speak" for mai
 
 Once the project moves into development, the press release can be used as a touchstone; a guiding light. The product team can ask themselves, "Are we building what is in the press release?" If they find they're spending time building things that aren't in the press release (overbuilding), they need to ask themselves why. This keeps product development focused on achieving the customer benefits and not building extraneous stuff that takes longer to build, takes resources to maintain, and doesn't provide real customer benefit (at least not enough to warrant inclusion in the press release).
  -->
- 
+ <!-- 
 ## Heading ##
   > Name the product in a way the reader (i.e. your target customers) will understand.
 
@@ -41,4 +41,44 @@ Once the project moves into development, the press release can be used as a touc
   > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  > Wrap it up and give pointers where the reader should go next. -->
+
+# READIT #
+## An app that reads your page ##
+## READIT reads your page and image. ##
+
+## Summary ##
+
+READIT reads given page's image and put it in a text to be read.
+
+## Problem ##
+
+1. Read the image
+2. Make use of the image reading data into DOM
+3. Save the data into DB for later/repeated use
+
+## Solution ##
+
+1. using clarifai API
+2. using React
+3. using Mongoose ( MongoDB )
+
+## Quote from You ##
+
+READIT is an MVP for image recognition in action.
+
+## How to Get Started ##
+
+Fork the repo, run the shell script given in terminal to fire up the app.
+
+## Customer Quote ##
+
+Customer:
+A develper who wants barebone image recognition framework
+
+Quote:
+I wanted to try the image recognition, and this repo lets me do that!
+
+## Closing and Call to Action ##
+
+"npm install" and run the app to see what it does!
