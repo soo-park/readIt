@@ -10,13 +10,13 @@ READIT reads given page's image and put it in a text to be read.
 
 1. Read the image
 2. Make use of the image reading data into DOM
-3. Save the data into DB for later/repeated use
+3. Save the data for repeated use
 
 ## Solution ##
 
 1. using clarifai API
 2. using React
-3. using Mongoose ( MongoDB )
+3. using React state
 
 ## Quote from You ##
 
