@@ -14,6 +14,7 @@ app.use(express.static(__dirname + '/../react-client/dist'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
+
 app.get('/items', function (req, res) {
 
   // var imageUrl = 'https://samples.clarifai.com/metro-north.jpg';
