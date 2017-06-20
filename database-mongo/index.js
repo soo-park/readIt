@@ -1,6 +1,7 @@
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/test');
+// ============== connect mongoose ==============
 
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/readit');
 var db = mongoose.connection;
 
 db.on('error', function() {
@@ -11,18 +12,16 @@ db.once('open', function() {
   console.log('mongoose connected successfully');
 });
 
-// declare mongoose schema
-var Schema = mongoose.Schema();
+// ============== make Schema =================
 
-// img analysis schema
-var schema = new Schema({
-  img: { data: Buffer, contentType: String},
+var Schema = mongoose.Schema;
+
+var itemSchema = mongoose.Schema({
   imgUrl: String,
   items: Array
 });
 
-// instance of the schema
-var Item = mongoose.model('Item', schema);
+var Item = mongoose.model('Item', itemSchema);
 
 var selectAll = function(callback) {
   Item.find({}, function(err, items) {
@@ -35,5 +34,4 @@ var selectAll = function(callback) {
 };
 
 module.exports.selectAll = selectAll;
-
-
+module.exports.Item = Item;

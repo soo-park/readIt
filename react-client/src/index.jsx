@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import $ from 'jquery';
 import List from './components/List.jsx';
 import Viewer from './components/Viewer.jsx';
-import Search from './components/Search.jsx'
+import Search from './components/Search.jsx';
 
 class App extends React.Component {
   constructor(props) {
