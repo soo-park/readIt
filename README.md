@@ -38,12 +38,6 @@ I wanted to try the image recognition, and this repo lets me do that!
 
 1. Get clarifai token
 
-2. Generate .env file in root
-
-3. in secret.sh, write the following
-
-export CLARIFAI_CLIENT_ID='your ID';
-export CLARIFAI_CLIENT_SECRET='your secret';
-export CLARIFAI_ACCESS_TOKEN='your token';
+2. Use it as your token on httpHelper file
 
 "npm install" and run the app to see what it does!
