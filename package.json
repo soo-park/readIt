@@ -19,12 +19,14 @@
     "body-parser": "^1.17.2",
     "bootstrap": "^3.3.7",
     "clarifai": "^2.1.8",
+    "d3": "^4.9.1",
     "express": "^4.15.0",
     "jquery": "^3.1.1",
     "mongoose": "^4.8.6",
     "nodemon": "^1.11.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
+    "victory": "^0.21.0",
     "webpack": "^3.0.0"
   },
   "repository": "https://github.com/soo-park/hrsf78-mvp-starter.git"

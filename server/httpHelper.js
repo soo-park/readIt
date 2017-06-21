@@ -23,32 +23,7 @@ module.exports = {
 
     });
   },
-
-  getClarifaiFoodData: (url) => {
-
-    return new Promise((resolve, reject) => {
-
-      // instantiate a new Clarifai app passing in your clientId and clientSecret
-      var app = new Clarifai.App(
-        'WR7A0Cr1AnDfdTm_dLtyBisbxlNagHYV0_EiD17M',
-        'Yhatk7XLzphmwYHz-G_OQNLR8hVOHoffJBdYL8Ds'
-      );
-
-      // predict the contents of an image by passing in a url
-      app.models.predict(Clarifai.GENERAL_MODEL, url)
-      .then(
-        function(response) {
-          resolve(response);
-        },
-        function(err) {
-          reject(err);
-        }
-      )
-
-    });
-  },
-
-
+  
   // get the name of property and value of the property of the image given
   parseOneData: (imageUrl, response) => {
     var concepts = response.outputs[0].data.concepts;

@@ -2,10 +2,11 @@ import React from 'react';
 import ListItem from './ListItem.jsx';
 
 const List = (props) => (
-  <div className="col-sm-4 col-md-4" style={{ "backgroundColor": "#FFFFFF", "opacity": 0.5, "filter": "alpha(opacity=50)"}}>
+  <div className="col-md-4 col-lg-6">
     <div style={{ "color": "#000000"}}>
-      <h4> Image Analysis Result </h4>
-      Top { props.items.length } results
+      <h4> Top { props.items.length } Image Analysis Result </h4>
+      <p>It is possible that the image contains.. in ... probablity.</p>
+
       { props.items.map((item, idx) => <ListItem item={item} key={idx}/>)}
     </div>
   </div>

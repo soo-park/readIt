@@ -2,8 +2,9 @@ import React from 'react';
 
 const Search = (props) => (
   <div style={{"paddingBottom": "10px", "paddingLeft": "20px"}}>
-    <input type="text" className="search-box" placeholder="Paste image URL here"/>
-    <input type="button" className="button btn btn-primary" value="Search" onClick={props.handleClick} />
+    <span style={{"fontSize":"2em"}}>What is on my image?   </span>
+    <input type="button" value="Search" onClick={props.handleClick} />
+    <input type="text" className="search-box form-control input-sm" placeholder="Paste image URL here" style={{maxWidth:"400px"}} onKeyPress={props.handleKeyPress}/>
   </div>
 )
 

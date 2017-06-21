@@ -18,7 +18,8 @@ var Schema = mongoose.Schema;
 
 var itemSchema = mongoose.Schema({
   imgUrl: String,
-  items: Array
+  items: Array,
+  data: Array
 });
 
 var Item = mongoose.model('Item', itemSchema);
