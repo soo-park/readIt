@@ -18,7 +18,6 @@ app.use(bodyParser.json());
 app.get('/items', function (req, res) {
 
   var imageUrl = 'https://samples.clarifai.com/metro-north.jpg';
-  // var imageUrl = 'https://static1.squarespace.com/static/522a22cbe4b04681b0bff826/t/57337dcfc6fc086589abb7fb/1462992341586/?format=1500w';
 
   // get the name of property and value of the property of the image given
   httpHelper.getClarifaiData(imageUrl)
@@ -42,7 +41,6 @@ app.get('/items', function (req, res) {
 
 app.post('/items/search', function (req, res) {
 
-  // var imageUrl = 'https://samples.clarifai.com/metro-north.jpg';
   var imageUrl = req.body.imageUrl;
 
   // get the name of property and value of the property of the image given
@@ -74,10 +72,10 @@ app.post('/items/search', function (req, res) {
 
 })
 
-var port = process.env.PORT || 3001;
+var port = process.env.PORT || 3000;
 
 app.listen(port, function() {
-  console.log('listening on port 3001!');
+  console.log('listening on port 3000!');
 });
 
 module.exports = app;
